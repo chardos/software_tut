@@ -6,6 +6,11 @@ html, body{
   padding: 0;
   font-family: arial;
   overflow: hidden;
+  color: white;
+}
+
+a{
+  color: rgba(255,255,255,0.7);
 }
 .win{
   background-color: #448aff;
@@ -56,3 +61,4 @@ html, body{
 .circle.in{
   transform: scale(1);
 }
+
