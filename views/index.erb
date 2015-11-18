@@ -1,12 +1,38 @@
+<link href="style/style.css" rel="stylesheet" type="text/css">
+<link href="style/hands.css" rel="stylesheet" type="text/css">
+<link href="style/helpers.css" rel="stylesheet" type="text/css">
+
+
 <% your_action = params['action'] %>
 <% computer_action = ['paper', 'scissors', 'rock'].sample %>
 
-<h1><%= "You chose #{your_action}" %></h1>
-<h1><%= "Computer chose #{computer_action}" %></h1>
-<h1><%= GameDecider.result(your_action, computer_action) %></h1>
+<div class="Left">
+  <div class="hand <%= your_action %>"></div>
+  <div class="Player-name">You</div>
+</div>
+<div class="Right">
+  <div class="hand-wrap">
+    <div class="hand <%= computer_action %>"></div>
+  </div>
+  <div class="Player-name">Computer</div>
+</div>
+
+<div class="circle vert-center">
+  <div class="circle-text vert-center">
+    <%= GameDecider.result(your_action, computer_action) %>
+  </div>
+</div>
 
 
 <h4>Play again?</h4>
 <a href='/paper'>Paper</a>
 <a href='/scissors'>Scissors</a>
 <a href='/rock'>Rock</a>
+
+
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>

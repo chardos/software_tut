@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  overflow: hidden;
+}
+.Left{
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+
+.Right{
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+
+.Player-name{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 24px;
+}
+
+
+
+.circle{
+  color: white;
+  width: 25%;
+  height: 25%;
+  font-size: 24px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.3);
+}
