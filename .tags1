@@ -4,5 +4,3 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-GameDecider	/Users/tombroomfield/software_tut/model/temp_game_decider.rb	/^class GameDecider$/;"	class	line:1
-result	/Users/tombroomfield/software_tut/model/temp_game_decider.rb	/^    def result(player_action, computer_action)$/;"	method	line:3	class:GameDecider

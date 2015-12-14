@@ -1,0 +1,11 @@
+.playagain{
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+.playagain a{
+  display: inline-block;
+  margin-right: 10px;
+}

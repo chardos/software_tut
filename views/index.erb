@@ -1,0 +1,7 @@
+<% database = { '1' => { 'first_name' => 'Tom'},
+                '2' => { 'first_name' => 'Ben'}} %>
+<%= params[:id] %>
+<% user = database[params[:id]] %>
+<h1>Heading</h1>
+<h2>Hello <%= user['first_name'] %></h1>
+<div>Your email is tom@niftyforms.com<div>

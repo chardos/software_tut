@@ -1,0 +1,50 @@
+.hand{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  width: 35%;
+  height: 30%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+
+.Left .hand{
+  left: -500px;
+}
+
+.Left .hand.rock{
+  background-image: url(../images/rock.png);
+}
+.Left .hand.paper{
+  background-image: url(../images/paper.png);
+}
+.Left .hand.scissors{
+  background-image: url(../images/scissors.png);
+}
+
+
+.Right .hand{
+  right: -500px;
+}
+.Right .hand.rock{
+  background-image: url(../images/rock-r.png);
+}
+.Right .hand.paper{
+  background-image: url(../images/paper-r.png);
+}
+.Right .hand.scissors{
+  background-image: url(../images/scissors-r.png);
+}
+
+.animate-hands .Left .hand{
+  left: 0;
+  opacity: 1;
+}
+.animate-hands .Right .hand{
+  right: 0;
+  opacity: 1;
+}

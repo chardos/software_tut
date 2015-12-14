@@ -1,14 +1,25 @@
 
-<!-- <link href="style/style.css" rel="stylesheet" type="text/css">
+<link href="style/style.css" rel="stylesheet" type="text/css">
 <link href="style/hands.css" rel="stylesheet" type="text/css">
 <link href="style/playagain.css" rel="stylesheet" type="text/css">
-<link href="style/helpers.css" rel="stylesheet" type="text/css"> -->
+<link href="style/helpers.css" rel="stylesheet" type="text/css">
 
 
+<!-- Do This First -->
 
-  <% your_action = params['action'] %>
-  <% computer_action = ['paper', 'scissors', 'rock'].sample %>
-  <% result = GameDecider.result(your_action, computer_action) %>
+<% if false %>
+<% database = { '1' => { 'name' => 'Tom', 'email' => 'tomplbroomfield@gmail.com' },
+                '2' => { 'name' => 'Rich', 'email' => 'rich@niftyforms.com'}} %>
+
+<% user = database[params['id']] %>
+<h1>Welcome to our website</h1>
+<h2>Your name is <%= user['name'] %></h2>
+<div>Your email address is <%= user['email']%></div>
+<% end %>
+<!-- Then do this -->
+<% your_action = params['action'] %>
+<% computer_action = ['paper', 'scissors', 'rock'].sample %>
+<% result = GameDecider.result(your_action, computer_action) %>
 
 <body class="<%= result %>">
   <div class="Left">
@@ -33,10 +44,6 @@
   <a href='/scissors'>Scissors</a>
   <a href='/rock'>Rock</a>
 </div>
-
-
-
-
 
   <script src="js/jquery.js"></script>
   <script src="js/script.js"></script>
